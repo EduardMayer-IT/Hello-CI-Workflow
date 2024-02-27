@@ -1,0 +1,13 @@
+name: Einfacher CI Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Begrüßung 1
+        run: echo "Hello, CI Workflow!"
+      - name: Begrüßung 2
+        run: echo "Welcome to CI Workflow!"

@@ -33,3 +33,13 @@ b) Commite und pushe die Änderungen.
 c) Überprüfe den "Actions"-Tab, um sicherzustellen, dass der Workflow
 automatisch gestartet wurde und die Ausgaben "Hello, CI Workflow!"
 und "Welcome to CI Workflow!" enthält.
+############
+Dieser Code definiert einen GitHub Actions Workflow namens "Einfacher CI Workflow". Der Workflow wird ausgelöst, wenn ein Push-Event auf dem Main-Branch des Repositories stattfindet.
+
+Der Workflow besteht aus einem Job namens "build", der auf einem virtuellen Ubuntu-Server ausgeführt wird. Dieser Job enthält zwei Schritte:
+
+1. Der erste Schritt, "Begrüßung 1", führt den Befehl `echo "Hello, CI Workflow!"` aus. Dieser Befehl gibt die Zeichenkette "Hello, CI Workflow!" in der Konsole aus.
+
+2. Der zweite Schritt, "Begrüßung 3", führt den Befehl `echo "Welcome to CI Workflow!"` aus. Dieser Befehl gibt die Zeichenkette "Welcome to CI Workflow!" in der Konsole aus.
+
+Es gibt einen Kommentar neben dem Namen des zweiten Schritts, der darauf hinweist, dass der Name des Schritts ursprünglich "Begrüßung 2" war und dann in "Begrüßung 3" geändert wurde, bevor er wieder rückgängig gemacht wurde. Es ist wichtig zu beachten, dass der Name des Schritts keine Auswirkungen auf die Ausführung des Workflows hat. Er dient lediglich dazu, den Schritt in der Workflow-Definition und in den Workflow-Logs zu identifizieren.

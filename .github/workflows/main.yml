@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: Begrüßung 1
         run: echo "Hello, CI Workflow!"
-      - name: Begrüßung 3 # begrüßung von2 auf 3 geändert
+      - name: Begrüßung 3 # begrüßung von2 auf 3 geändert rückgängig gemacht
         run: echo "Welcome to CI Workflow!"
